@@ -1,0 +1,30 @@
+.search_area {
+  display: flex;
+  align-items: center;
+  background: rgb(19, 49, 64);
+  padding: 16px;
+  color: white;
+}
+
+.search_area span {
+  margin: 0px 5px;
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  a.primary:hover {
+    background: var(--button-primary-hover);
+    border-color: transparent;
+    color: white;
+  }
+
+  a.secondary:hover {
+    background: var(--button-secondary-hover);
+    border-color: transparent;
+  }
+
+  .footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+}
